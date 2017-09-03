@@ -1,0 +1,26 @@
+2017-09-03T17:43:31.629424300 0.016728s notice: In recursion: removing file 'c:\\users\\george\\git\\cbsvr\\db\\tmp'
+2017-09-03T17:43:31.631425000 0.017841s warn: Trying to delete non-existent file 'c:\\users\\george\\git\\cbsvr\\db\\tmp'
+2017-09-03T17:43:31.633426900 0.020630s notice: Initializing directory c:\\users\\george\\git\\cbsvr\\db
+2017-09-03T17:43:31.635428900 0.022337s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory 'c:\\users\\george\\git\\cbsvr\\db' did not already exist or is empty.)
+2017-09-03T17:43:31.635428901 0.022489s notice: Running rethinkdb 2.3.6-windows (MSC 190024215)...
+2017-09-03T17:43:31.635428902 0.022654s notice: Running on 6.2.9200 (Windows 8, Server 2012)
+2017-09-03T17:43:31.636428600 0.022941s notice: Loading data from directory c:\\users\\george\\git\\cbsvr\\db
+2017-09-03T17:43:32.002672200 0.389404s info: Automatically using cache size of 100 MB
+2017-09-03T17:43:32.002672201 0.389416s warn: Cache size does not leave much memory for server and query overhead (available memory: 473 MB).
+2017-09-03T17:43:32.002672202 0.389421s warn: Cache size is very low and may impact performance.
+2017-09-03T17:43:32.004675400 0.391793s notice: Listening for intracluster connections on port 29015
+2017-09-03T17:43:32.006674900 0.393817s notice: Listening for client driver connections on port 28015
+2017-09-03T17:43:32.007675800 0.394099s notice: Listening for administrative HTTP connections on port 8080
+2017-09-03T17:43:32.007675801 0.394105s notice: Listening on cluster address: 127.0.0.1
+2017-09-03T17:43:32.007675802 0.394108s notice: Listening on driver address: 127.0.0.1
+2017-09-03T17:43:32.007675803 0.394111s notice: Listening on http address: 127.0.0.1
+2017-09-03T17:43:32.007675804 0.394114s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-09-03T17:43:32.007675805 0.394117s notice: Server ready, "ultrabook_jgt" 7e648206-79ee-4be4-bf03-b23e15a152e4
+2017-09-03T19:01:21.871340800 4673.625158s info: Table 62a22c38-6761-4b11-9e63-c99a3e1d08bc: Starting a new Raft election for term 1.
+2017-09-03T19:01:21.875276400 4673.628449s info: Table 62a22c38-6761-4b11-9e63-c99a3e1d08bc: Added replica on this server.
+2017-09-03T19:01:21.886259300 4673.639563s info: Table 62a22c38-6761-4b11-9e63-c99a3e1d08bc: This server is Raft leader for term 1. Latest log index is 0.
+2017-09-03T19:37:38.074611100 6849.841261s notice: Server got Control-C; shutting down...
+2017-09-03T19:37:38.090228200 6849.846859s notice: Shutting down client connections...
+2017-09-03T19:37:38.090228201 6849.851778s notice: All client connections closed.
+2017-09-03T19:37:38.090228202 6849.851801s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-09-03T19:37:38.121482800 6849.887447s notice: Storage engine shut down.
