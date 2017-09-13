@@ -2,12 +2,24 @@ var request = require('request');
 
 console.log('starting...')
 
-request('http://74.208.159.205:5000/Sensors', function(err, resp, body) {
+var url = 'http://74.208.159.205:5000/Sensors?where={"type":"F", "node_id":"41"}'
+//var url = 'http://74.208.159.205:5000/Sensors' 
+
+request(url, function(err, resp, body) {
 	//console.log(err);
 	//console.log(resp);
-    console.log('got response...');
+    console.log('body retrieved! processing...')
     var sensorData = JSON.parse(body)
-    console.log('items:', sensorData._items.length)
+    console.log(sensorData._items.length, ' items found.')
+    var curData = [] //array of objects {'date': dateObj, 'value': valueObj}
+
+    sensorData._items.forEach(function(el) {
+        var ct = 0;
+        curData.concat({'count': ct, 'value': ct});
+        ct++;
+        console.log(ct, curData);
+    }, this);
+    console.log(curData)
 });
 
 /*fetch('http://74.208.159.205:5000/Sensors').then(function(resp) {
