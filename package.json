@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dateformat": "^2.0.0",
     "request": "^2.81.0",
     "rethinkdb": "^2.3.3"
   }

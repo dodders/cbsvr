@@ -1,4 +1,5 @@
 var request = require('request');
+var dateformat = require('dateformat')
 
 console.log('starting...')
 
@@ -12,15 +13,20 @@ request(url, function(err, resp, body) {
     var sensorData = JSON.parse(body)
     console.log(sensorData._items.length, ' items found.')
     var curData = [] //array of objects {'date': dateObj, 'value': valueObj}
-
     sensorData._items.forEach(function(el) {
-        var ct = 0;
-        curData.concat({'count': ct, 'value': ct});
-        ct++;
-        console.log(ct, curData);
+        curData.push({'date': fmtDate(el.time), 'value': fmtTemp(el.value)});
     }, this);
     console.log(curData)
 });
+
+function fmtDate(epochtime) {
+    var d = new Date(epochtime * 1000)
+    return dateformat(d, "yyyy-mmm-dd HH:MM:ss")
+}
+
+function fmtTemp(temp) {
+    return temp.replace("\'","").replace("\'","").replace('b','').trim()    
+}
 
 /*fetch('http://74.208.159.205:5000/Sensors').then(function(resp) {
 	console.log(resp)
