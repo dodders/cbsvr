@@ -1,0 +1,35 @@
+starting...
+retrieving url: http://74.208.159.205:5000/Sensors?page=1&where={"type":"F","node_id":"41","time":{"$gte":1500814800},"time":{"$lte":1500818400}}
+body retrieved! processing...
+100 ' items found.'
+retrieving url: http://74.208.159.205:5000/Sensors?page=2&where={"type":"F","node_id":"41","time":{"$gte":1500814800},"time":{"$lte":1500818400}}
+body retrieved! processing...
+100 ' items found.'
+retrieving url: http://74.208.159.205:5000/Sensors?page=3&where={"type":"F","node_id":"41","time":{"$gte":1500814800},"time":{"$lte":1500818400}}
+body retrieved! processing...
+100 ' items found.'
+retrieving url: http://74.208.159.205:5000/Sensors?page=4&where={"type":"F","node_id":"41","time":{"$gte":1500814800},"time":{"$lte":1500818400}}
+body retrieved! processing...
+100 ' items found.'
+retrieving url: http://74.208.159.205:5000/Sensors?page=5&where={"type":"F","node_id":"41","time":{"$gte":1500814800},"time":{"$lte":1500818400}}
+body retrieved! processing...
+95 ' items found.'
+no more pages to retrieve.
+final output:
+ Map {
+  '2017-Jul-22 19' => '77.56',
+  '2017-Jul-22 20' => '79.81',
+  '2017-Jul-22 21' => '79.90',
+  '2017-Jul-22 22' => '78.24',
+  '2017-Jul-22 23' => '76.66',
+  '2017-Jul-23 00' => '76.32',
+  '2017-Jul-23 01' => '75.69',
+  '2017-Jul-23 02' => '75.25',
+  '2017-Jul-23 03' => '75.09',
+  '2017-Jul-23 04' => '75.09',
+  '2017-Jul-23 05' => '75.20',
+  '2017-Jul-23 06' => '76.05',
+  '2017-Jul-23 07' => '78.15',
+  '2017-Jul-23 08' => '79.32',
+  '2017-Jul-23 09' => '79.50' }
+total points retrieved: 495  and total ppm: 15

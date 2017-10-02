@@ -11,6 +11,8 @@ var url2 = 'http://74.208.159.205:5000/Sensors?page=1&where={"type":"F","node_id
 //var url = 'http://74.208.159.205:5000/Sensors' 
 
 //just do this! so odd...
+temps = new Map()
+totalCt = 0
 getPage(1)
 
 function getPage(currpage) {
@@ -20,23 +22,31 @@ function getPage(currpage) {
         console.log('body retrieved! processing...')
         var sensorData = JSON.parse(body)
         console.log(sensorData._items.length, ' items found.')
-        var curData = [] //array of objects {'date': dateObj, 'value': valueObj}
         sensorData._items.forEach(function(el) {
-            curData.push({'date': fmtDate(el.time), 'value': fmtTemp(el.value)});
+            temps.set(fmtDate(el.time), fmtTemp(el.value))
+            totalCt = totalCt + 1
+            //graphData.push({'date': fmtDate(el.time), 'value': fmtTemp(el.value)});
         }, this)
-        console.log('page ', currpage, ':', curData)
+        
+        // for (var [key, value] of temps.entries()) {
+        //     arr.push({'date' : key, 'value': value})
+        // }
 
         if (sensorData._links.next != null) {
             getPage(currpage + 1)
         } else {
             console.log('no more pages to retrieve.')
+            console.log('final output:\n', temps)
+            console.log('total points retrieved:', totalCt, ' and total ppm:', temps.size)
         }
     });
 }
 
 function fmtDate(epochtime) {
     var d = new Date(epochtime * 1000)
-    return dateformat(d, "yyyy-mmm-dd HH:MM:ss")
+    //use date format to limit measurements to 1 per minute.
+    //return dateformat(d, "yyyy-mmm-dd HH:MM") 
+    return dateformat(d, "yyyy-mmm-dd HH") 
 }
 
 function fmtTemp(temp) {
