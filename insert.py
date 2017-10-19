@@ -11,13 +11,20 @@ print(db)
 
 for x in range(0, 1000):
 
-    post={
+    post1 = {
+        "key": "gd",
+        "name": "george",
+        "location": "gloucester",
+        "time": dt.datetime.utcnow().timestamp()
+    }
+    coll.insert_one(post1).inserted_id
+    post2 = {
         "key": "ed",
         "name": "edward",
         "location": "gloucester",
-        "time": dt.datetime.utcnow()
+        "time": dt.datetime.utcnow().timestamp()
     }
-    id = coll.insert_one(post).inserted_id
-    print('inserted', id)
-    time.sleep(2)
+    coll.insert_one(post2).inserted_id
+    print('inserted')
+    time.sleep(1)
 
