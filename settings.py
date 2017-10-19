@@ -39,5 +39,6 @@ people = {
 
 DOMAIN = {
     'people': people,
+    'peeps': people,
 }
 

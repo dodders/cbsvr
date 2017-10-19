@@ -12,12 +12,12 @@ print(db)
 for x in range(0, 1000):
 
     post={
-        "key": "gd",
-        "name": "george",
-        "location": "new york",
+        "key": "ed",
+        "name": "edward",
+        "location": "gloucester",
         "time": dt.datetime.utcnow()
     }
     id = coll.insert_one(post).inserted_id
     print('inserted', id)
-    time.sleep(3)
+    time.sleep(2)
 

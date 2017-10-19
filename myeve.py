@@ -9,8 +9,14 @@ def pre_get(resource, request, lookup):
     print('a get on resource %s with request %s and lookup %s.' % (resource, request, lookup))
     lookup["key"] = {'$eq': 'gd'}
 
+
+def pre_get_people_gd(resource, request, lookup):
+    print('pre-GET hook triggered!')
+    lookup["key"] = {'$eq': 'gd'}
+
+
 app = Eve()
 app.on_post_GET += post_get
-app.on_pre_GET += pre_get
+app.on_pre_GET += pre_get_people_gd
 
 app.run()
