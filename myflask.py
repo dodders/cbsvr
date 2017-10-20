@@ -19,8 +19,11 @@ def hello():
     return 'hello ' + request.args.get('name', '')
 
 def today():
-    start = dt.datetime(2017, 10, 20, 0, 0, 0, 0).timestamp()
-    end = dt.datetime(2017, 10, 21, 0, 0, 0, 0).timestamp()
+    now = dt.date.today()
+    start = dt.datetime(now.year, now.month, now.day, 0, 0, 0, 0).timestamp()
+    day = dt.timedelta(days=1)
+    end = start + day
+    end = end.timestamp()
     return start, end
 
 
@@ -29,7 +32,9 @@ def people(person_id):
     print("retrieving for %s..." % person_id)
     docs = []
     start, end = today()
-    cursor = coll.find({'key': person_id, 'time': {"$gte": start}, 'end': {'$lte': end}})
+    qry = {'key': person_id, 'time': {'$gte': start}}
+    print('query is %s' % qry)
+    cursor = coll.find(qry)
     for doc in cursor:
         # serialization support
         doc['_id'] = str(doc['_id'])
