@@ -18,13 +18,13 @@ def hello():
     dt.date.today()
     return 'hello ' + request.args.get('name', '')
 
+
 def today():
     now = dt.date.today()
-    start = dt.datetime(now.year, now.month, now.day, 0, 0, 0, 0).timestamp()
+    start = dt.datetime(now.year, now.month, now.day, 0, 0, 0, 0)
     day = dt.timedelta(days=1)
     end = start + day
-    end = end.timestamp()
-    return start, end
+    return start.timestamp(), end.timestamp()
 
 
 @app.route("/people/<person_id>", methods=['GET'])
@@ -32,7 +32,7 @@ def people(person_id):
     print("retrieving for %s..." % person_id)
     docs = []
     start, end = today()
-    qry = {'key': person_id, 'time': {'$gte': start}}
+    qry = {'key': person_id, '$and': [{'time': {'$gte': start}}, {'time': {'$lte': end}}]}
     print('query is %s' % qry)
     cursor = coll.find(qry)
     for doc in cursor:
