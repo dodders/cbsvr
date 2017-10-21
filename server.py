@@ -3,11 +3,11 @@ from flask import request
 from pymongo import MongoClient
 import json
 import datetime as dt
-import string
 
 print('connecting to mongo...')
 client = MongoClient('localhost', 27017)  # make this explicit
-db = client['test']
+#db = client['gdtechdb_prod']
+db = client.test
 coll = db['Sensors']
 app = Flask(__name__)
 
@@ -37,27 +37,29 @@ def today():
 @app.route("/sensor/<node>", methods=['GET'])
 def people(node):
     skip = request.args.get('skip', '')
+    type = request.args.get('type', '')
     try:
         skip = int(skip)
     except ValueError as err:
         print('invalid skip parameter %s. defaulting.' % skip)
         skip = 0
-    docs = getdata(node, None, skip)
+    docs = getdata(node, None, skip, type)
     return json.dumps(docs)
 
 
-def getdata(node, date, skip):
+def getdata(node, date, skip, type):
     docs = []
-    node = int(node)
+    # node = int(node)
     start, end = today()
     qry = {'node_id': node, '$and': [{'time': {'$gte': start}}, {'time': {'$lte': end}}]}
-    # qry = {'node_id': node}
+    if type:
+        qry['type'] = type
     print('query is %s' % qry)
     cursor = coll.find(qry)
     ct = 0
     for doc in cursor:
         doc['_id'] = str(doc['_id']) # serialization support
-        doc['value'] = float(doc['value'].replace('b', '').replace("'", ""))
+        doc['value'] = float(doc['value'].replace('b', '').replace('v','').replace("'", ""))
         ct += 1
         # skip if needed
         if ct > skip:
@@ -69,5 +71,5 @@ def getdata(node, date, skip):
     return docs
 
 
-app.run(host="0.0.0.0", port=5001)
+app.run(host="0.0.0.0", port=5000)
 
