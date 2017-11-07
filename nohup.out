@@ -1320,3 +1320,63 @@
 2017-10-21T18:39:34.310-0400 I NETWORK  [thread1] connection accepted from 127.0.0.1:65053 #84 (1 connection now open)
 2017-10-21T18:39:34.311-0400 I NETWORK  [conn84] received client metadata from 127.0.0.1:65053 conn84: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
 2017-10-21T18:39:52.941-0400 I -        [conn84] end connection 127.0.0.1:65053 (1 connection now open)
+2017-11-07T14:14:55.479-0500 I CONTROL  [initandlisten] MongoDB starting : pid=61480 port=27017 dbpath=/Users/zkc820/data/mongodb 64-bit host=784f4385b8ea
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten] db version v3.4.9
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten] git version: 876ebee8c7dd0e2d992f36a848ff4dc50ee6603e
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2l  25 May 2017
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten] allocator: system
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten] modules: none
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten] build environment:
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-11-07T14:14:55.481-0500 I CONTROL  [initandlisten] options: { storage: { dbPath: "/Users/zkc820/data/mongodb" } }
+2017-11-07T14:14:55.482-0500 W -        [initandlisten] Detected unclean shutdown - /Users/zkc820/data/mongodb/mongod.lock is not empty.
+2017-11-07T14:14:55.483-0500 I -        [initandlisten] Detected data files in /Users/zkc820/data/mongodb created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-11-07T14:14:55.483-0500 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-11-07T14:14:55.483-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7680M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-11-07T14:14:55.994-0500 I CONTROL  [initandlisten] 
+2017-11-07T14:14:55.994-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-11-07T14:14:55.994-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-11-07T14:14:55.994-0500 I CONTROL  [initandlisten] 
+2017-11-07T14:14:56.011-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/zkc820/data/mongodb/diagnostic.data'
+2017-11-07T14:14:56.012-0500 I NETWORK  [thread1] waiting for connections on port 27017
+2017-11-07T14:15:09.792-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:65528 #1 (1 connection now open)
+2017-11-07T14:15:09.792-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:65528 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-11-07T14:15:24.782-0500 I -        [conn1] end connection 127.0.0.1:65528 (1 connection now open)
+2017-11-07T14:15:50.990-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49258 #2 (1 connection now open)
+2017-11-07T14:15:50.991-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:49258 conn2: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T14:15:50.992-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49259 #3 (2 connections now open)
+2017-11-07T14:15:50.992-0500 I NETWORK  [conn3] received client metadata from 127.0.0.1:49259 conn3: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T14:16:20.657-0500 I -        [conn3] end connection 127.0.0.1:49259 (2 connections now open)
+2017-11-07T14:16:20.657-0500 I -        [conn2] end connection 127.0.0.1:49258 (2 connections now open)
+2017-11-07T14:16:22.395-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49345 #4 (1 connection now open)
+2017-11-07T14:16:22.396-0500 I NETWORK  [conn4] received client metadata from 127.0.0.1:49345 conn4: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-11-07T14:17:48.400-0500 I -        [conn4] end connection 127.0.0.1:49345 (1 connection now open)
+2017-11-07T14:17:53.993-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49613 #5 (1 connection now open)
+2017-11-07T14:17:53.994-0500 I NETWORK  [conn5] received client metadata from 127.0.0.1:49613 conn5: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T14:18:06.951-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49681 #6 (2 connections now open)
+2017-11-07T14:18:06.952-0500 I NETWORK  [conn6] received client metadata from 127.0.0.1:49681 conn6: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T14:25:34.799-0500 I -        [conn5] end connection 127.0.0.1:49613 (2 connections now open)
+2017-11-07T14:25:34.799-0500 I -        [conn6] end connection 127.0.0.1:49681 (2 connections now open)
+2017-11-07T15:31:58.829-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:57182 #7 (1 connection now open)
+2017-11-07T15:31:58.830-0500 I NETWORK  [conn7] received client metadata from 127.0.0.1:57182 conn7: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T15:32:14.808-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:57261 #8 (2 connections now open)
+2017-11-07T15:32:14.809-0500 I NETWORK  [conn8] received client metadata from 127.0.0.1:57261 conn8: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T15:32:35.689-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:57346 #9 (3 connections now open)
+2017-11-07T15:32:35.690-0500 I NETWORK  [conn9] received client metadata from 127.0.0.1:57346 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.9" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "16.7.0" } }
+2017-11-07T15:49:15.350-0500 I COMMAND  [conn9] killcursors: found 0 of 1
+2017-11-07T15:49:15.351-0500 I -        [conn9] end connection 127.0.0.1:57346 (3 connections now open)
+2017-11-07T16:16:40.669-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:58023 #10 (3 connections now open)
+2017-11-07T16:16:40.670-0500 I NETWORK  [conn10] received client metadata from 127.0.0.1:58023 conn10: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T16:16:52.869-0500 I -        [conn7] end connection 127.0.0.1:57182 (3 connections now open)
+2017-11-07T16:16:52.869-0500 I -        [conn8] end connection 127.0.0.1:57261 (3 connections now open)
+2017-11-07T16:16:56.285-0500 I -        [conn10] end connection 127.0.0.1:58023 (1 connection now open)
+2017-11-07T16:16:58.566-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:58034 #11 (1 connection now open)
+2017-11-07T16:16:58.567-0500 I NETWORK  [conn11] received client metadata from 127.0.0.1:58034 conn11: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T16:21:33.360-0500 I -        [conn11] end connection 127.0.0.1:58034 (1 connection now open)
+2017-11-07T16:25:44.973-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:58122 #12 (1 connection now open)
+2017-11-07T16:25:44.974-0500 I NETWORK  [conn12] received client metadata from 127.0.0.1:58122 conn12: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T16:26:30.201-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:58125 #13 (2 connections now open)
+2017-11-07T16:26:30.202-0500 I NETWORK  [conn13] received client metadata from 127.0.0.1:58125 conn13: { driver: { name: "PyMongo", version: "3.5.1" }, os: { type: "Darwin", name: "Darwin", architecture: "x86_64", version: "10.12.6" }, platform: "CPython 3.6.2.final.0" }
+2017-11-07T16:29:27.058-0500 I -        [conn13] end connection 127.0.0.1:58125 (2 connections now open)
+2017-11-07T16:29:27.058-0500 I -        [conn12] end connection 127.0.0.1:58122 (1 connection now open)

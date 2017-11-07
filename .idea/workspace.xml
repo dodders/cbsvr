@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0003c3d4-1d8b-4e15-8a37-3d0673a3f03e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nohup.out" afterPath="$PROJECT_DIR$/nohup.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +22,8 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -57,8 +59,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="237" />
     <option name="y" value="23" />
-    <option name="width" value="1124" />
-    <option name="height" value="803" />
+    <option name="width" value="1408" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -78,8 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -94,11 +94,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,10 +243,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="237" y="23" width="1124" height="803" extended-state="0" />
+    <frame x="237" y="23" width="1408" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2197509" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17542614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27792916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -252,7 +254,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4441417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3415133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -269,11 +271,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -338,10 +350,164 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myeve.py" />
     <entry file="file://$PROJECT_DIR$/myflask.py" />
+    <entry file="file://$PROJECT_DIR$/runserver.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="466" column="0" lean-forward="false" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
+          <folding>
+            <marker date="1500263141000" expanded="true" signature="0:4982" ph="&quot;&quot;&quot;Generic socket server classes....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="false" signature="5070:5134" ph="import ..." />
+            <marker date="1500263141000" expanded="true" signature="5298:5503" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="5635:5797" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="5656:5795" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="5799:5943" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="6100:13341" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="6106:7064" ph="&quot;&quot;&quot;Base class for server classes....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="7146:7396" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="7428:7539" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="7437:7526" ph="&quot;&quot;&quot;Called by constructor to activate the server....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="7588:8566" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="7597:7812" ph="&quot;&quot;&quot;Handle one request at a time until shutdown....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="7861:8467" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="7874:8117" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="8165:8467" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="8279:8467" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="8484:8566" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="8591:8872" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="8600:8798" ph="&quot;&quot;&quot;Stops the serve_forever loop....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="8904:9093" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="8913:9080" ph="&quot;&quot;&quot;Called by the serve_forever() loop....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="9099:9675" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="9706:10805" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="9715:9800" ph="&quot;&quot;&quot;Handle one request, possibly blocking....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="9809:9924" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="10200:10330" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="10374:10805" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="10457:10805" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="10612:10805" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="10656:10805" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="10845:11625" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="10854:11094" ph="&quot;&quot;&quot;Handle one request, without blocking....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="11264:11568" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="11373:11479" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="11499:11568" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="11656:11783" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="11665:11770" ph="&quot;&quot;&quot;Called if no new request arrives within self.timeout....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="11839:11984" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="11848:11964" ph="&quot;&quot;&quot;Verify the request.  May be overridden....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="12041:12234" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="12050:12142" ph="&quot;&quot;&quot;Call finish_request....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="12263:12359" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="12272:12346" ph="&quot;&quot;&quot;Called to clean-up the server....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="12415:12550" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="12592:12694" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="12733:12802" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="12856:13235" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="12865:12987" ph="&quot;&quot;&quot;Handle an error gracefully.  May be overridden....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="13261:13281" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="13313:13341" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="13372:16642" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="13378:14459" ph="&quot;&quot;&quot;Base class for various socket-based server classes....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="14681:15124" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="14955:15124" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="14972:15046" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="15066:15124" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="15152:15463" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="15161:15246" ph="&quot;&quot;&quot;Called by constructor to bind the socket....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="15495:15645" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="15504:15593" ph="&quot;&quot;&quot;Called by constructor to activate the server....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="15674:15785" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="15683:15757" ph="&quot;&quot;&quot;Called to clean-up the server....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="15808:15936" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="15817:15900" ph="&quot;&quot;&quot;Return socket file number....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="15964:16104" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="15973:16068" ph="&quot;&quot;&quot;Get the request and client address from the socket....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="16146:16523" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="16225:16406" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="16238:16361" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="16562:16642" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="16672:17242" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="16827:16946" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="16978:17035" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="17077:17153" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="17192:17242" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="17267:20413" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="17291:20413" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="17476:19014" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="17632:18067" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="18133:18465" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="18154:18255" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="18297:18407" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="18563:19014" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="18584:18816" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="18662:18762" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="18858:18957" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="19049:19222" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="19062:19186" ph="&quot;&quot;&quot;Wait for zombies after self.timeout seconds of inactivity....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="19258:19469" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="19271:19433" ph="&quot;&quot;&quot;Collect the zombie child processes regularly in the ForkingMixIn....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="19530:20413" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="19642:19886" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="19904:20413" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="19921:19997" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="20045:20141" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="20263:20413" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="20437:21300" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="20506:20579" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="20670:20999" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="20679:20788" ph="&quot;&quot;&quot;Same as in BaseServer but as a thread....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="21056:21300" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21326:21442" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21379:21384" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21437:21442" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21496:21501" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21554:21559" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21591:21911" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21631:21671" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21713:21753" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21825:21830" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21906:21911" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21938:23000" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="21944:22627" ph="&quot;&quot;&quot;Base class for request handler classes....&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="22685:22893" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="22915:22928" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="22951:22964" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="22987:23000" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="23003:23340" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="23390:25009" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="23460:23850" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="23972:24082" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="24140:24673" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="24310:24434" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="24696:25009" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="24730:24955" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="24815:24955" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="24832:24934" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25047:25470" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25052:25188" ph="&quot;&quot;&quot;Simple writable BufferedIOBase implementation for a socket...&quot;&quot;&quot;" />
+            <marker date="1500263141000" expanded="true" signature="25219:25245" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25270:25290" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25315:25412" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25435:25470" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25521:25855" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25609:25761" ph="..." />
+            <marker date="1500263141000" expanded="true" signature="25784:25855" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

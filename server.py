@@ -13,6 +13,7 @@ coll = db['Sensors']
 app = Flask(__name__)
 CORS(app)
 
+
 @app.route("/", methods=['GET'])
 def hello():
     r = request
@@ -34,35 +35,47 @@ def test():
 
 @app.route('/sensorlist', methods=['GET'])
 def sensorlist():
-    return coll.distinct('node_id')
+    return json.dumps(coll.distinct('node_id'))
 
 
 def today():
     now = dt.date.today()
     start = dt.datetime(now.year, now.month, now.day, 0, 0, 0, 0)
-    day = dt.timedelta(days=1)
-    end = start + day
-    return start.timestamp(), end.timestamp()
+    return start.timestamp()
+
+
+def getstart(p):
+    # p should be a number specifying the delta in days.
+    now = dt.date.today()
+    nowdatetime = dt.datetime(now.year, now.month, now.day, 0, 0, 0, 0)
+    if p is None:
+        diff = dt.timedelta(days=1)
+    else:
+        diff = dt.timedelta(days=int(p))
+
+    start = nowdatetime - diff
+    return start.timestamp()
 
 
 @app.route("/sensor/<node>", methods=['GET'])
 def people(node):
     skip = request.args.get('skip', '')
     type = request.args.get('type', '')
+    period = request.args.get('period')
     try:
         skip = int(skip)
     except ValueError as err:
         print('invalid skip parameter %s. defaulting.' % skip)
         skip = 0
-    docs = getdata(node, None, skip, type)
+    start = getstart(period)
+    docs = getdata(node, start, skip, type)
     return json.dumps(docs)
 
 
-def getdata(node, date, skip, type):
+def getdata(node, start, skip, type):
     docs = []
-    # node = int(node)
-    start, end = today()
-    qry = {'node_id': node, '$and': [{'time': {'$gte': start}}, {'time': {'$lte': end}}]}
+    # qry = {'node_id': node, '$and': [{'time': {'$gte': start}}, {'time': {'$lte': end}}]}
+    qry = {'node_id': node, 'time': {'$gte': start}}
     if type:
         qry['type'] = type
     print('query is %s' % qry)
