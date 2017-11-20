@@ -7,11 +7,12 @@ import datetime as dt
 
 print('connecting to mongo...')
 client = MongoClient('localhost', 27017)  # make this explicit
-#db = client['gdtechdb_prod']
-db = client.test
+db = client['gdtechdb_prod']
+#db = client.test
 coll = db['Sensors']
 app = Flask(__name__)
 CORS(app)
+timefmt = '%Y-%m-%d %H:%M:%S'
 
 
 @app.route("/", methods=['GET'])
@@ -76,17 +77,19 @@ def getdata(node, start, skip, type):
     docs = []
     # qry = {'node_id': node, '$and': [{'time': {'$gte': start}}, {'time': {'$lte': end}}]}
     qry = {'node_id': node, 'time': {'$gte': start}}
+    sortparam = [('time', 1)]
     if type:
         qry['type'] = type
-    print('query is %s' % qry)
-    cursor = coll.find(qry)
+    print('query is %s and sort is ' % qry, sortparam)
+    cursor = coll.find(qry).sort(sortparam)
     ct = 0
     for doc in cursor:
-        doc['_id'] = str(doc['_id']) # serialization support
-        doc['value'] = float(doc['value'].replace('b', '').replace('v','').replace("'", ""))
         ct += 1
         # skip if needed
         if ct > skip:
+            doc['_id'] = str(doc['_id'])  # serialization support
+            doc['value'] = float(doc['value'].replace('b', '').replace('v', '').replace("'", ""))
+            doc['human_time'] = dt.datetime.fromtimestamp(doc['time']).strftime(timefmt)
             docs.append(doc)
             ct = 0
 
