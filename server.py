@@ -7,8 +7,8 @@ import datetime as dt
 
 print('connecting to mongo...')
 client = MongoClient('localhost', 27017)  # make this explicit
-db = client['gdtechdb_prod']
-#db = client.test
+#db = client['gdtechdb_prod']
+db = client.test
 coll = db['Sensors']
 app = Flask(__name__)
 CORS(app)
@@ -97,6 +97,6 @@ def getdata(node, start, skip, type):
     docs.insert(0, docs.__len__())
     return docs
 
-
-app.run(host="0.0.0.0", port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
 

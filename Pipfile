@@ -9,6 +9,7 @@ eve = "*"
 pymongo = "*"
 flask = "*"
 "flask-cors" = "*"
+gunicorn = "*"
 
 
 [dev-packages]

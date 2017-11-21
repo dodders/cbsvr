@@ -2,3 +2,6 @@
 build/
 node_modules/
 nohup.out
+__pycache__
+server.pyc
+

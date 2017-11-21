@@ -1,2 +1,2 @@
 #!/bin/sh
-pipenv run python3 server.py
+pipenv run gunicorn -w 4 -b 0.0.0.0:5050 server:app
