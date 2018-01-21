@@ -81,7 +81,7 @@ def getdata(node, start, skip, mytype):
     if mytype:
         qry['type'] = mytype
     print('query is %s and sort is ' % qry, sortparam)
-    cursor = coll.find(qry).limit(100)
+    cursor = coll.find(qry).sort(sortparam)
     print('query run.')  
     ct = 0
     total = 0
